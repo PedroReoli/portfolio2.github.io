@@ -248,3 +248,141 @@ footer form {
   footer.detail{
       font-weight: bold;
   }
+/* Responsividade */
+/* para telas com largura de até 600px */
+@media (max-width: 600px) {
+    /* navbar */
+    #navbar {
+        height: auto;
+    }
+    #navbar img {
+        position: static;
+        height: 50px;
+        margin-top: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #navbar h2 {
+        line-height: 50px;
+        margin-left: 0;
+    }
+    #navbar ul {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #1D336C;
+        text-align: center;
+    }
+    #navbar li {
+        margin: 10px 0;
+    }
+    #navbar li a {
+        display: block;
+        padding: 10px;
+    }
+    #navbar-toggle {
+        display: block;
+        background-color: #1D336C;
+        color: #FFF;
+        border: none;
+        padding: 10px;
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        cursor: pointer;
+    }
+    /* banner */
+    #main-banner {
+        height: 50vh;
+        padding-top: 10vh;
+    }
+    #banner-info {
+        width: 80%;
+        padding: 30px;
+    }
+    #banner-info img {
+        height: 80px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #banner-info p {
+        font-size: 14px;
+    }
+    /* about */
+    #about-section {
+        height: auto;
+        padding-bottom: 30px;
+    }
+    #about-section h2 {
+        margin-top: 30px;
+    }
+    #about-section p {
+        font-size: 14px;
+    }
+    /* skills */
+    #skills-section .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .skills-container {
+        padding: 30px 25px;
+    }
+}
+
+/* para telas com largura entre 600px e 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+    /* navbar */
+    #navbar img {
+        height: 60px;
+    }
+    #navbar ul {
+        position: static;
+        display: block;
+        background-color: transparent;
+        text-align: left;
+        margin-top: 10px;
+    }
+    #navbar li {
+        display: inline-block;
+        margin: 0 20px;
+    }
+    #navbar li a {
+        padding: 0;
+    }
+    #navbar-toggle {
+        display: none;
+    }
+    /* banner */
+    #main-banner {
+        height: 60vh;
+        padding-top: 20vh;
+    }
+    #banner-info {
+        width: 70%;
+        padding: 50px;
+    }
+    #banner-info img {
+        height: 100px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #banner-info p {
+        font-size: 18px;
+    }
+    /* about */
+    #about-section {
+        height: 450px;
+    }
+}
+
+/* para telas com largura acima de 1024px */
+@media (min-width: 1025px) {
+    /* navbar */
+    #navbar {
+        height: 80px;
+    }
+    #navbar img {
+        height: 75px
+    }}
